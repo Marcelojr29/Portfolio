@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marceloborges.dev/sitemap.xml
+Sitemap: https://marcelodev-nu.vercel.app/sitemap.xml

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://marceloborges.dev/</loc>
+    <loc>https://marcelodev-nu.vercel.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://marceloborges.dev/projetos/csela</loc>
+    <loc>https://marcelodev-nu.vercel.app/projetos/csela</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marceloborges.dev/projetos/cezar-construcoes</loc>
+    <loc>https://marcelodev-nu.vercel.app/projetos/cezar-construcoes</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

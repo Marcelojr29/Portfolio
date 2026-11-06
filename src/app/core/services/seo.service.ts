@@ -9,7 +9,7 @@ export interface SeoData {
 }
 
 const SITE_NAME = 'Marcelo Borges — Portfólio';
-const SITE_URL = 'https://marceloborges.dev';
+const SITE_URL = 'https://marcelodev-nu.vercel.app';
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 @Injectable({ providedIn: 'root' })
