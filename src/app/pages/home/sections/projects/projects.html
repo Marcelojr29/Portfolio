@@ -1,0 +1,9 @@
+<section id="projetos" class="mx-auto max-w-5xl px-4 sm:px-6 py-16 border-t border-outline-subtle">
+  <h2 class="font-display text-2xl text-on-surface m-0">{{ 'projects.title' | transloco }}</h2>
+
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+    @for (project of projects(); track project.slug) {
+      <app-project-card [project]="project" />
+    }
+  </div>
+</section>

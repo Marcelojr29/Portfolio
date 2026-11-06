@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "stack": "Stack",
+    "education": "Formação",
+    "contact": "Contato",
+    "mainLabel": "Navegação principal",
+    "mobileLabel": "Navegação principal (mobile)"
+  },
+  "header": {
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "theme": {
+    "enableDark": "Ativar tema escuro",
+    "enableLight": "Ativar tema claro"
+  },
+  "language": {
+    "switchLabel": "Mudar para inglês"
+  },
+  "about": {
+    "downloadResume": "Baixar currículo",
+    "talkToMe": "Falar comigo"
+  },
+  "experience": {
+    "title": "Experiência",
+    "present": "Presente"
+  },
+  "projects": {
+    "title": "Projetos",
+    "viewDetails": "Ver detalhes",
+    "repository": "Repositório",
+    "demo": "Demo"
+  },
+  "stack": {
+    "title": "Stack",
+    "categories": {
+      "frontend": "Front-end",
+      "backend": "Integração & Back-end",
+      "database": "Banco de Dados",
+      "devops": "DevOps & Ferramentas",
+      "tools": "Metodologias"
+    }
+  },
+  "education": {
+    "title": "Formação",
+    "types": {
+      "graduacao": "Graduação",
+      "tecnico": "Técnico",
+      "certificacao": "Certificação"
+    },
+    "ongoing": "em andamento"
+  },
+  "contact": {
+    "title": "Contato",
+    "intro": "Preencha o formulário ou escreva direto para",
+    "name": "Nome",
+    "nameRequired": "Informe seu nome.",
+    "email": "E-mail",
+    "emailRequired": "Informe seu e-mail.",
+    "emailInvalid": "Informe um e-mail válido.",
+    "message": "Mensagem",
+    "messageRequired": "Escreva uma mensagem com pelo menos 10 caracteres.",
+    "send": "Enviar mensagem",
+    "sending": "Enviando…",
+    "success": "Mensagem enviada. Obrigado pelo contato!",
+    "error": "Não consegui enviar agora. Tente novamente ou escreva para"
+  },
+  "projectDetail": {
+    "back": "Voltar para projetos",
+    "context": "Contexto",
+    "challenge": "Desafio",
+    "solution": "Solução técnica",
+    "result": "Resultado"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você procura não existe ou foi movida.",
+    "backHome": "Voltar para o início"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "seo": {
+    "homeTitle": "Marcelo Borges",
+    "homeDescription": "Marcelo Borges, desenvolvedor de Software Full Stack. Projetos, experiência profissional e contato.",
+    "notFoundTitle": "Página não encontrada",
+    "notFoundDescription": "A página que você procura não existe ou foi movida."
+  }
+}

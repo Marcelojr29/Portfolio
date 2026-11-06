@@ -1,0 +1,20 @@
+<section id="formacao" class="mx-auto max-w-5xl px-4 sm:px-6 py-16 border-t border-outline-subtle">
+  <h2 class="font-display text-2xl text-on-surface m-0">{{ 'education.title' | transloco }}</h2>
+
+  <ul class="mt-8 flex flex-col gap-5 list-none m-0 p-0">
+    @for (item of education(); track item.institution + item.course) {
+      <li class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b border-outline-subtle pb-4">
+        <div>
+          <p class="text-on-surface m-0">
+            <span class="font-medium">{{ item.course }}</span>
+            <span class="text-on-surface-muted"> · {{ item.institution }}</span>
+          </p>
+          <p class="text-sm text-on-surface-muted mt-1 mb-0">{{ 'education.types.' + item.type | transloco }}</p>
+        </div>
+        <p class="text-sm text-on-surface-muted whitespace-nowrap m-0">
+          {{ item.startYear }} – {{ item.endYear ?? ('education.ongoing' | transloco) }}
+        </p>
+      </li>
+    }
+  </ul>
+</section>

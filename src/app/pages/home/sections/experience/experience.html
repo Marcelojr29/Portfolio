@@ -1,0 +1,29 @@
+<section id="experiencia" class="mx-auto max-w-5xl px-4 sm:px-6 py-16 border-t border-outline-subtle">
+  <h2 class="font-display text-2xl text-on-surface m-0">{{ 'experience.title' | transloco }}</h2>
+
+  <ol class="mt-8 flex flex-col gap-10 list-none m-0 p-0">
+    @for (job of experiences(); track job.company + job.role) {
+      <li class="border-l border-outline-subtle pl-6">
+        <p class="text-sm text-on-surface-muted m-0">
+          {{ job.startDate }} — {{ job.endDate ?? ('experience.present' | transloco) }}
+        </p>
+        <h3 class="font-display text-lg text-on-surface mt-1 mb-0">{{ job.role }}</h3>
+        <p class="text-on-surface-muted mt-1">{{ job.company }} · {{ job.city }}</p>
+
+        <ul class="mt-3 flex flex-col gap-1.5 list-disc pl-5 text-on-surface">
+          @for (highlight of job.highlights; track highlight) {
+            <li>{{ highlight }}</li>
+          }
+        </ul>
+
+        <ul class="mt-4 flex flex-wrap gap-2 list-none m-0 p-0">
+          @for (tech of job.technologies; track tech) {
+            <li class="text-xs border border-outline-subtle rounded-full px-2.5 py-1 text-on-surface-muted">
+              {{ tech }}
+            </li>
+          }
+        </ul>
+      </li>
+    }
+  </ol>
+</section>

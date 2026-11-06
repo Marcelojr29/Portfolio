@@ -1,0 +1,65 @@
+@if (project(); as project) {
+  <article class="mx-auto max-w-3xl px-4 sm:px-6 py-16">
+    <a
+      routerLink="/"
+      fragment="projetos"
+      class="inline-flex items-center gap-1 text-sm text-on-surface-muted hover:text-on-surface no-underline hover:underline underline-offset-4"
+    >
+      <mat-icon class="text-base! leading-none! w-4! h-4!" aria-hidden="true">arrow_back</mat-icon>
+      {{ 'projectDetail.back' | transloco }}
+    </a>
+
+    <h1 class="font-display text-3xl text-on-surface mt-6 mb-2">{{ project.name }}</h1>
+    <p class="text-on-surface-muted">{{ project.shortDescription }}</p>
+
+    <ul class="mt-4 flex flex-wrap gap-2 list-none m-0 p-0">
+      @for (tech of project.technologies; track tech) {
+        <li class="text-xs border border-outline-subtle rounded-full px-2.5 py-1 text-on-surface-muted">
+          {{ tech }}
+        </li>
+      }
+    </ul>
+
+    <div class="mt-6 flex items-center gap-4 text-sm">
+      @if (project.repoUrl) {
+        <a
+          class="inline-flex items-center gap-1 text-accent hover:underline underline-offset-4"
+          [href]="project.repoUrl"
+          target="_blank"
+          rel="noopener"
+        >
+          {{ 'projects.repository' | transloco }}
+        </a>
+      }
+      @if (project.demoUrl) {
+        <a
+          class="inline-flex items-center gap-1 text-accent hover:underline underline-offset-4"
+          [href]="project.demoUrl"
+          target="_blank"
+          rel="noopener"
+        >
+          {{ 'projects.demo' | transloco }}
+        </a>
+      }
+    </div>
+
+    <dl class="mt-12 flex flex-col gap-8">
+      <div>
+        <dt class="font-display text-lg text-on-surface">{{ 'projectDetail.context' | transloco }}</dt>
+        <dd class="mt-2 ml-0 text-on-surface-muted">{{ project.detail.context }}</dd>
+      </div>
+      <div>
+        <dt class="font-display text-lg text-on-surface">{{ 'projectDetail.challenge' | transloco }}</dt>
+        <dd class="mt-2 ml-0 text-on-surface-muted">{{ project.detail.challenge }}</dd>
+      </div>
+      <div>
+        <dt class="font-display text-lg text-on-surface">{{ 'projectDetail.solution' | transloco }}</dt>
+        <dd class="mt-2 ml-0 text-on-surface-muted">{{ project.detail.solution }}</dd>
+      </div>
+      <div>
+        <dt class="font-display text-lg text-on-surface">{{ 'projectDetail.result' | transloco }}</dt>
+        <dd class="mt-2 ml-0 text-on-surface-muted">{{ project.detail.result }}</dd>
+      </div>
+    </dl>
+  </article>
+}

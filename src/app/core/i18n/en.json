@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stack": "Stack",
+    "education": "Education",
+    "contact": "Contact",
+    "mainLabel": "Main navigation",
+    "mobileLabel": "Main navigation (mobile)"
+  },
+  "header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "theme": {
+    "enableDark": "Enable dark theme",
+    "enableLight": "Enable light theme"
+  },
+  "language": {
+    "switchLabel": "Switch to Portuguese"
+  },
+  "about": {
+    "downloadResume": "Download resume",
+    "talkToMe": "Get in touch"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewDetails": "View details",
+    "repository": "Repository",
+    "demo": "Demo"
+  },
+  "stack": {
+    "title": "Stack",
+    "categories": {
+      "frontend": "Front-end",
+      "backend": "Integration & Backend",
+      "database": "Database",
+      "devops": "DevOps & Tools",
+      "tools": "Methodologies"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "types": {
+      "graduacao": "Degree",
+      "tecnico": "Technical Degree",
+      "certificacao": "Certification"
+    },
+    "ongoing": "ongoing"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Fill out the form or write directly to",
+    "name": "Name",
+    "nameRequired": "Please enter your name.",
+    "email": "Email",
+    "emailRequired": "Please enter your email.",
+    "emailInvalid": "Please enter a valid email.",
+    "message": "Message",
+    "messageRequired": "Write a message with at least 10 characters.",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent. Thanks for reaching out!",
+    "error": "Couldn't send it right now. Try again or write to"
+  },
+  "projectDetail": {
+    "back": "Back to projects",
+    "context": "Context",
+    "challenge": "Challenge",
+    "solution": "Technical solution",
+    "result": "Result"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or was moved.",
+    "backHome": "Back to home"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "seo": {
+    "homeTitle": "Marcelo Borges",
+    "homeDescription": "Marcelo Borges, Full Stack Software Developer. Projects, professional experience and contact.",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page you're looking for doesn't exist or was moved."
+  }
+}

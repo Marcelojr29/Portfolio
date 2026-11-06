@@ -1,0 +1,32 @@
+<section id="sobre" class="mx-auto max-w-5xl px-4 sm:px-6 pt-20 pb-16">
+  <div class="flex flex-col sm:flex-row sm:items-start gap-8">
+    <app-avatar />
+
+    <div class="flex-1">
+      <h1 class="font-display text-3xl sm:text-4xl text-on-surface m-0">
+        {{ profile().name }}
+      </h1>
+      <p class="mt-2 text-lg text-on-surface-muted">{{ profile().title }}</p>
+      <p class="mt-4 max-w-prose text-on-surface">{{ profile().summary }}</p>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a
+          class="inline-flex items-center gap-2 rounded-md bg-accent text-on-accent px-5 py-2.5 text-sm font-medium no-underline hover:opacity-90"
+          [href]="profile().resumeUrl"
+          download
+        >
+          <mat-icon class="text-base! leading-none! w-4! h-4!" aria-hidden="true">download</mat-icon>
+          {{ 'about.downloadResume' | transloco }}
+        </a>
+
+        <a
+          class="inline-flex items-center gap-2 rounded-md border border-outline px-5 py-2.5 text-sm font-medium text-on-surface no-underline hover:bg-surface-container"
+          routerLink="/"
+          fragment="contato"
+        >
+          {{ 'about.talkToMe' | transloco }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
